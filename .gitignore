@@ -1,0 +1,13 @@
+node_modules
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode
+
+# Hugo
+.hugo_build.lock
+public/
+resources/
