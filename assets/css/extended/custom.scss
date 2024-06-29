@@ -1,0 +1,32 @@
+:root {
+	// Increase the width
+	--main-width: 920px;
+	--post-width: 920px;
+}
+
+:root,
+.dark {
+	// Accent color
+	--link-color: var(--primary);
+	--link-hover-color: #177fd9;
+	--link-underline-shadow: 0 1px 0 var(--link-color);
+	--link-hover-underline-color: #177fd9;
+	--link-hover-underline-shadow: 0 2px 0 var(--link-hover-underline-color);
+}
+
+.logo a {
+	font-weight: 500;
+	color: var(--secondary);
+}
+
+.logo a:hover {
+	color: var(--link-hover-color);
+}
+
+.profileimage {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	display: block;
+	margin-bottom: 20px;
+}

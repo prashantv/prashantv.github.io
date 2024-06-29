@@ -1,0 +1,20 @@
+{{ $homeInfo := .Site.GetPage "home/_index" }}
+<article class="first-entry home-info">
+  <header class="entry-header">
+    {{ if $homeInfo.Params.profileUrl }}
+    {{ (resources.Get $homeInfo.Params.profileUrl).Publish }}
+    <img class="profileimage" src="{{ resources.Get $homeInfo.Params.profileUrl }}">
+    {{ end }}
+    <h1>{{ $homeInfo.Title }}</h1>
+    <h2>{{ $homeInfo.Params.subtitle }}</h2>
+  </header>
+  <section class="entry-content">
+    <div class="post-content">
+      {{ $homeInfo.Content }}
+    </div>
+  </section>
+  <footer class="entry-footer">
+    {{- partial "social_icons.html" (dict "icons" site.Params.socialIcons "svg" $.Site.Data.svg "MaskedEmail"
+    site.Params.MaskedEmail "Email" site.Params.Email) -}}
+  </footer>
+</article>
