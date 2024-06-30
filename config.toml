@@ -5,6 +5,10 @@ theme = "PaperModX"
 enableRobotsTXT = true
 pygmentsUseClasses = true
 
+# stop tags like #go becoming #Go
+# we'll manually manage case in the content
+titleCaseStyle = "none"
+
 [params]
 env = "production"
 title = "@prashantv"
