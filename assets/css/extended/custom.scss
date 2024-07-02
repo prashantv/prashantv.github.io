@@ -30,3 +30,8 @@
 	display: block;
 	margin-bottom: 20px;
 }
+
+// Disable italics in syntax highlighting
+.dark .chroma .kd {
+  font-style: normal;
+}
